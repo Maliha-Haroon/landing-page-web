@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Shan Foods Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo">
+                <img src="logo.PNG" alt="Shan logo">
+            </a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#whatsnew">What's New</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content" id="home">
+            <div class="textBox">
+                <h2>Shan Foods!<br>Taste the Tradition of <span>Pakistan</span></h2>
+                <p>
+                    Shan Foods, established in 1981, is a leading Pakistani brand offering high-quality spice mixes. Renowned for capturing authentic Pakistani flavors, Shan simplifies cooking traditional dishes like biryanis and curries. Trusted globally, Shan brings the essence of Pakistani cuisine to homes around the world.
+                </p>
+                <a href="#learnmore">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img class="Shan" src="image1.PNG" alt="Shan image">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="image1.PNG" onclick="imgSlider('image1.PNG'); changeCircleColor('#fff')" alt="Thumbnail 1"></li>
+            <li><img src="image2.PNG" onclick="imgSlider('image2.PNG'); changeCircleColor('#fff')" alt="Thumbnail 2"></li>
+            <li><img src="image3.PNG" onclick="imgSlider('image3.PNG'); changeCircleColor('#fff')" alt="Thumbnail 3"></li>
+            <li><img src="image4.PNG" onclick="imgSlider('image4.PNG'); changeCircleColor('#fff')" alt="Thumbnail 4"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/ShanFoods"><img src="facebook.png" alt="Facebook"></a></li>
+            <li><a href="https://www.instagram.com/ShanFoods"><img src="instagram.png" alt="Instagram"></a></li>
+            <li><a href="https://twitter.com/ShanFoods"><img src="twitter.png" alt="Twitter"></a></li>
+        </ul>
+    </section>
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <p>Explore our wide range of authentic Pakistani spice mixes and recipe packs.</p>
+        <ul>
+            <li>Biryani Mix - Perfect for an aromatic and flavorful biryani.</li>
+            <li>Karahi Mix - Ideal for a rich and spicy chicken karahi.</li>
+            <li>Nihari Mix - Create a hearty and flavorful Nihari stew.</li>
+            <li>Korma Mix - For a creamy and savory korma experience.</li>
+            <li>BBQ Mixes - Enhance your barbecue with our special spice blends.</li>
+            <li>Vegetarian Mixes - Delightful spices for vegetarian dishes.</li>
+        </ul>
+    </section>
+    <section id="whatsnew">
+        <h2>What's New</h2>
+        <p>Discover our latest products and exciting updates!</p>
+        <ul>
+            <li><strong>New Achari Mix:</strong> Add a tangy and spicy twist to your dishes with our Achari Mix.</li>
+            <li><strong>Special Ramadan Pack:</strong> Exclusive spice mixes curated for the holy month of Ramadan.</li>
+            <li><strong>Shan Recipe App:</strong> Our new app offers a variety of recipes and cooking tips.</li>
+            <li><strong>Instant Spice Mixes:</strong> Convenient and quick spice mixes for everyday cooking.</li>
+            <li><strong>Global Expansion:</strong> Shan Foods is now available in more countries around the world.</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Whether you have a question about our products, need assistance, or just want to share your feedback, feel free to reach out to us.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <p>You can also reach us on social media:</p>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/ShanFoods"><img src="facebook.png" alt="Facebook"></a></li>
+            <li><a href="https://www.instagram.com/ShanFoods"><img src="instagram.png" alt="Instagram"></a></li>
+            <li><a href="https://twitter.com/ShanFoods"><img src="twitter.png" alt="Twitter"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.Shan').src = anything;
+        }
+
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>

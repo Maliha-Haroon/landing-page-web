@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0a0a0a;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('back.PNG') no-repeat center center/cover;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    max-width: 50px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox {
+    max-width: 600px;
+}
+
+.content .textBox h2 {
+    color: #f3cb1b;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.content .textBox h2 span {
+    color: #067c06;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.content .textBox p {
+    color: #f3cb1b;
+    margin-top: 20px;
+}
+
+.content .textBox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #fa120a;
+    color: #fff;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.content .imgBox {
+    max-width: 340px;
+}
+
+.content .imgBox img {
+    max-width: 100%;
+    display: block;
+}
+
+.thumb {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.thumb li {
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.thumb li:hover {
+    transform: translateY(-15px);
+}
+
+.thumb li img {
+    max-width: 60px;
+}
+
+.sci {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+}
+
+/* Section Styles */
+section#menu {
+    background: #0a0a0a; /* Black background */
+    color: #fff; /* White text */
+}
+
+section#menu h2,
+section#menu p {
+    color: #fff;
+}
+
+section#menu ul li {
+    color: #fff;
+}
+
+/* Positioning text and adding image in #menu section */
+section#menu .content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section#menu .content .imgBox {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+section#menu .content .imgBox img {
+    max-width: 340px;
+}
+
+/* #whatsnew section */
+section#whatsnew {
+    background: #fff3e0; /* Light orange */
+    color: #e65100; /* Dark orange */
+}
+
+section#whatsnew h2,
+section#whatsnew p {
+    color: #e65100;
+}
+
+section#whatsnew ul li {
+    color: #e65100;
+}
+
+/* #contact section */
+section#contact {
+    background: #e8f5e9; /* Light green */
+    color: #1b5e20; /* Dark green */
+}
+
+section#contact h2,
+section#contact p {
+    color: #1b5e20;
+}
+
+section#contact label {
+    color: #1b5e20;
+}
+
+section#contact input[type="text"],
+section#contact input[type="email"],
+section#contact textarea {
+    background: #c8e6c9; /* Very light green */
+    border: 1px solid #1b5e20;
+    color: #1b5e20;
+}
+
+section#contact input[type="submit"] {
+    background: #1b5e20;
+    color: #fff;
+}
+
+section#contact ul.sci li img {
+    filter: invert(25%) sepia(47%) saturate(1616%) hue-rotate(91deg) brightness(98%) contrast(91%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .textBox, .imgBox {
+        max-width: 100%;
+    }
+
+    .textBox h2 {
+        font-size: 2em;
+    }
+
+    .textBox p {
+        font-size: 0.9em;
+    }
+
+    .textBox a {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    .thumb {
+        bottom: 20px;
+    }
+
+    .sci {
+        bottom: 20px;
+        right: 20px;
+    }
+}
